@@ -6,6 +6,7 @@ namespace TaskManagerAPI.Models
     {
         public int Id { get; set; }
 
+        [Required]
         [StringLength(maximumLength: 70, ErrorMessage = "Task Title is too long")]
         public string Title { get; set; } = string.Empty;
 
