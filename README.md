@@ -1,6 +1,8 @@
 # 📇Task manager App Backend
 
 A Task manager App Backend web application built with **ASP.NET Core Web API**. t provides CRUD operations for managing tasks (create, edit, delete, toggle complete, filter, etc).
+<img width="1570" height="753" alt="image" src="https://github.com/user-attachments/assets/fa159c30-0baa-40f7-b575-b255528c31fe" />
+
 
 ---
 
