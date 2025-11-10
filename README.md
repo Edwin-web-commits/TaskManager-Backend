@@ -42,37 +42,34 @@ taskmanager-backend/
 ├── appsettings.json
 
 ## Backend Setup
-Clone the repository:
-git clone <https://github.com/Edwin-web-commits/TaskManager-Backend.git 
+1. Clone the repository:
+- git clone <https://github.com/Edwin-web-commits/TaskManager-Backend.git 
+- cd taskmanager-backend
+- cd taskmanagerAPI
+- Update the appsettings.json file with your database and Redis configurations.
 
-cd taskmanager-backend
-cd taskmanagerAPI
+2. Apply database migrations:
 
-Update the appsettings.json file with your database and Redis configurations.
+- dotnet ef database update
 
-Apply database migrations:
+3. Run the backend:
+- dotnet run
 
-dotnet ef database update
+API Endpoints:
 
-Run the backend:
-dotnet run
-
-API Endpoints
-tasks
-
-GET /api/tasks’ – Get all tasks (with optional query parameter ‘status=completed|pending’)
-GET /api/tasks/{id}’ – Get a single task
-POST /api/tasks’ – Create a new task
-PUT /api/tasks/{id}’ – Update a task
-DELETE /api/tasks/{id}’ – Delete a task
+GET /api/tasks – Get all tasks (with optional query parameter ‘status=completed|pending’)
+GET /api/tasks/{id} – Get a single task
+POST /api/tasks – Create a new task
+PUT /api/tasks/{id} – Update a task
+DELETE /api/tasks/{id} – Delete a task
 
 ## Unit Testing
 Backend Tests
-Navigate to the test project directory:
-cd TaskManagerAPI.Tests
+1. Navigate to the test project directory:
+- cd TaskManagerAPI.Tests
 
-Run the tests:
-dotnet test
+2. Run the tests:
+- dotnet test
 
 License
 
